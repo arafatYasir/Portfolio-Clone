@@ -1,6 +1,6 @@
 import AboutMe from "@/componnets/AboutMe";
 import Header from "@/componnets/Header";
-import Logo from "@/icons/Logo";
+import Skills from "@/componnets/Skills";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Header />
       <main>
         <AboutMe />
+        <Skills />
       </main>
     </>
   );

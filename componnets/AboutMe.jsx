@@ -13,12 +13,12 @@ const AboutMe = () => {
                     </a>
 
                     <a href="#skill" target="_blank" className="text-white/85 text-lg leading-[26px] px-[26.5px] py-[16.5px] inline-block border-2 border-[#00CF5D] rounded-[4px]">
-                        Get Resume
+                        My Skills
                     </a>
                 </div>
             </div>
-            <div className="w-[525px] h-[326px]">
-                <img src="https://zonayed.me/static/profile-bd1430b121f195d1f823a8e0b9bf2c46.jpg" alt="Zonayed Ahmed" className="rounded-[10px] w-[304px] h-[304px] mx-auto" />
+            <div className="w-[525px] h-[326px] group">
+                <img src="https://zonayed.me/static/profile-bd1430b121f195d1f823a8e0b9bf2c46.jpg" alt="Zonayed Ahmed" className="rounded-[10px] w-[304px] h-[304px] mx-auto grayscale group-hover:grayscale-0 group-hover:scale-105 transition duration-900" />
             </div>
 
             {/* About Me Side Text */}
