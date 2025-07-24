@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
     return (
-        <header>
+        <header className="max-w-[1200px] mx-auto">
             <Navbar />
             <Banner />
         </header>

@@ -1,6 +1,8 @@
+import Header from "@/componnets/Header";
 import "./globals.css";
 
 import { Lato } from 'next/font/google';
+import Footer from "@/componnets/Footer";
 
 // Load the Lato font (you can choose weights and subsets as needed)
 const lato = Lato({
@@ -18,9 +20,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`bg-[#111a28] antialiased max-w-[1200px] mx-auto ${lato.className}`}
+        className={`bg-[#111a28] antialiased  ${lato.className}`}
       >
-        {children}
+        <Header />
+        <main className="max-w-[1200px] mx-auto">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
