@@ -5,7 +5,7 @@ import { Lato } from 'next/font/google';
 // Load the Lato font (you can choose weights and subsets as needed)
 const lato = Lato({
   subsets: ['latin'],
-  weight: ['400', '700', '900'], // customize weights
+  weight: ['300', '400', '700', '900'], // customize weights
   display: 'swap', // optional: improves font swap experience
 });
 

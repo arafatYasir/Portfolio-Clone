@@ -1,4 +1,5 @@
 import AboutMe from "@/componnets/AboutMe";
+import Contact from "@/componnets/Contact";
 import Header from "@/componnets/Header";
 import Hobbies from "@/componnets/Hobbies";
 import Portfolio from "@/componnets/Portfolio";
@@ -13,6 +14,7 @@ export default function Home() {
         <Skills />
         <Hobbies />
         <Portfolio />
+        <Contact />
       </main>
     </>
   );
