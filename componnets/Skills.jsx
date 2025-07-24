@@ -144,36 +144,36 @@ const Skills = () => {
 
 
     return (
-        <section className="relative mt-[200px] pl-[100px]">
+        <section className="relative mt-[150px] sm:mt-[200px] sm:pl-[100px]">
             {/* Tabs or Buttons */}
-            <div className="flex gap-[15px]">
+            <div className="flex flex-wrap justify-center gap-[15px]">
                 <button
-                    className={`text-white/85 text-lg leading-[26px px-[27.5px] py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedSkill === "web" ? "font-black bg-[#00CF5D]" : ""} transition`}
+                    className={`text-white/85 sm:text-lg leading-[26px] px-[15px] py-[5px] sm:px-[27.5px] sm:py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedSkill === "web" ? "font-black bg-[#00CF5D]" : ""} transition`}
                     onClick={() => setSelectedSkill("web")}
                 >Web</button>
                 <button
-                    className={`text-white/85 text-lg leading-[26px px-[27.5px] py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedSkill === "others" ? "font-black bg-[#00CF5D]" : ""} transition`}
+                    className={`text-white/85 sm:text-lg sm:leading-[26px] px-[15px] py-[5px] sm:px-[27.5px] sm:py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedSkill === "others" ? "font-black bg-[#00CF5D]" : ""} transition`}
                     onClick={() => setSelectedSkill("others")}
                 >Others</button>
                 <button
-                    className={`text-white/85 text-lg leading-[26px px-[27.5px] py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedSkill === "programming" ? "font-black bg-[#00CF5D]" : ""} transition`}
+                    className={`text-white/85 sm:text-lg sm:leading-[26px] px-[15px] py-[5px] sm:px-[27.5px] sm:py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedSkill === "programming" ? "font-black bg-[#00CF5D]" : ""} transition`}
                     onClick={() => setSelectedSkill("programming")}
                 >Programming</button>
                 <button
-                    className={`text-white/85 text-lg leading-[26px px-[27.5px] py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedSkill === "tools" ? "font-black bg-[#00CF5D]" : ""} transition`}
+                    className={`text-white/85 sm:text-lg sm:leading-[26px] px-[15px] py-[5px] sm:px-[27.5px] sm:py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedSkill === "tools" ? "font-black bg-[#00CF5D]" : ""} transition`}
                     onClick={() => setSelectedSkill("tools")}
                 >Tools</button>
             </div>
 
             {/* Skills for each tab */}
-            <div className="flex flex-wrap gap-[30px] mt-[25px]">
+            <div className="flex flex-wrap justify-center sm:justify-start gap-y-[15px] sm:gap-[30px] mt-5 sm:mt-[25px]">
                 {
                     skills[selectedSkill].map((skill, idx) => <Skill key={idx} name={skill.name} percent={skill.percent} />)
                 }
             </div>
 
             {/* Skills side text */}
-            <div className="absolute left-[-80px] top-[100px]">
+            <div className="absolute left-1/2 top-[-60px] -translate-x-1/2 sm:translate-0 sm:left-[-80px] sm:top-[100px]">
                 <SkillsText />
             </div>
         </section>
