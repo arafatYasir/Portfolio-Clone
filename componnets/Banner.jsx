@@ -29,27 +29,27 @@ const Banner = () => {
                 </a>
             </div>
 
-            {/* Side Text */}
+            {/* Banner Side Text */}
             <div >
                 {/* Social Icons */}
-                <div className="absolute left-[-28px] top-[-12%] flex flex-col gap-[18px]">
+                <div className="absolute left-1/2 top-[135%] -translate-x-1/2 sm:translate-0 sm:left-[-28px] sm:top-[-12%] flex sm:flex-col gap-6 sm:gap-[18px]">
                     <a href="https://github.com/zonayedpca" target="_blank">
-                        <FaGithub className="text-xl text-white/85" />
+                        <FaGithub className="sm:text-xl text-white/85" />
                     </a>
                     <a href="https://codepen.io/zonayedpca" target="_blank">
-                        <FaCodepen className="text-xl text-white/85" />
+                        <FaCodepen className="sm:text-xl text-white/85" />
                     </a>
                     <a href="https://www.linkedin.com/in/zonayedpca" target="_blank">
-                        <FaLinkedinIn className="text-xl text-white/85" />
+                        <FaLinkedinIn className="sm:text-xl text-white/85" />
                     </a>
                     <a href="https://medium.com/@zonayedpca" target="_blank">
-                        <FaMediumM className="text-xl text-white/85" />
+                        <FaMediumM className="sm:text-xl text-white/85" />
                     </a>
                     <a href="https://x.com/zonayedpca" target="_blank">
-                        <FaTwitter className="text-xl text-white/85" />
+                        <FaTwitter className="sm:text-xl text-white/85" />
                     </a>
                 </div>
-                <div className="absolute left-[-80px] top-[90%]">
+                <div className="absolute left-1/2 -translate-x-1/2 top-[115%] sm:left-[-80px] sm:top-[90%] sm:translate-0">
                     <FollowText />
                 </div>
             </div>

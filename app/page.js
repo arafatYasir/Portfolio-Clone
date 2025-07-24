@@ -9,11 +9,11 @@ import Skills from "@/componnets/Skills";
 export default function Home() {
   return (
     <>
-        {/* <AboutMe />
+        <AboutMe />
         <Skills />
-        <Hobbies />
-        <Portfolio />
-        <Contact /> */}
+        {/* <Hobbies /> */}
+        {/* <Portfolio /> */}
+        {/* <Contact /> */}
     </>
   );
 }
