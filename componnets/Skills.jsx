@@ -173,7 +173,7 @@ const Skills = () => {
             </div>
 
             {/* Skills side text */}
-            <div className="absolute left-[-80px] top-[20%]">
+            <div className="absolute left-[-80px] top-[100px]">
                 <SkillsText />
             </div>
         </section>
