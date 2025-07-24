@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Skill from "./Skill";
+import SkillsText from "./SkillsText";
 
 const Skills = () => {
     const [selectedSkill, setSelectedSkill] = useState("web");
@@ -169,6 +170,11 @@ const Skills = () => {
                 {
                     skills[selectedSkill].map((skill, idx) => <Skill key={idx} name={skill.name} percent={skill.percent} />)
                 }
+            </div>
+
+            {/* Skills side text */}
+            <div className="absolute left-[-80px] top-[20%]">
+                <SkillsText />
             </div>
         </section>
     );

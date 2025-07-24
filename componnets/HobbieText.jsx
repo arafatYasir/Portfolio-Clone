@@ -1,11 +1,9 @@
-import React from 'react';
-
-const AboutMeText = () => {
+const HobbieText = () => {
     return (
         <div className={` uppercase text-white/85 text-lg font-black leading-[26px] py-[4.5px] pl-[10px] pr-[8px] bg-[#1D293A] rounded-[4px] inline-block transform rotate-90 relative after:content-[''] after:absolute after:top-1/2 after:right-[-100px] after:w-[100px] after:h-[2px] after:bg-white after:-translate-y-1/2`}>
-            About Me
+            Love To Do
         </div>
     );
 };
 
-export default AboutMeText;
+export default HobbieText;
