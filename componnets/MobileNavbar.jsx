@@ -22,7 +22,7 @@ const MobileNavbar = () => {
             </button>
 
             {showNav && (
-                <ul className="w-[345px] h-[300px] bg-[#1d293a] absolute top-[80px] left-[16px] z-10 rounded-[4px] transition p-[20px] flex flex-col justify-between">
+                <ul className="w-[90%] h-[300px] bg-[#1d293a] absolute top-[80px] left-[16px] z-10 rounded-[4px] transition p-[20px] flex flex-col justify-between">
                     {navLinks.map(({ label, href }) => (
                         <li key={label} className="mx-[15px]">
                             <Link
