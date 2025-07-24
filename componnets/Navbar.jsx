@@ -1,6 +1,15 @@
 import Link from "next/link";
 import Logo from "../icons/Logo";
 
+import { Inter } from "next/font/google";
+import MenuIcon from "@/icons/MenuIcon";
+import MobileNavbar from "./MobileNavbar";
+
+const inter = Inter({
+    weight: ["400"],
+    subsets: ["latin"]
+})
+
 const navLinks = [
     { label: "About", href: "#about" },
     { label: "Skill", href: "#skill" },
@@ -11,13 +20,15 @@ const navLinks = [
 
 const Navbar = () => {
     return (
-        <nav className="flex items-center justify-between px-[25px] pt-[25px]">
+        <nav className={`flex items-center justify-between px-[25px] pt-[25px] ${inter.className}`}>
             <div>
                 <Link href="/">
                     <Logo />
                 </Link>
             </div>
-            <ul className="flex items-center">
+
+            {/* ----Desktop Navbar---- */}
+            <ul className="hidden sm:flex sm:items-center">
                 {navLinks.map(({ label, href }) => (
                     <li key={label} className="mx-[15px]">
                         <Link
@@ -40,6 +51,9 @@ const Navbar = () => {
                     </Link>
                 </li>
             </ul>
+
+            {/* ----Mobile Navbar---- */}
+            <MobileNavbar />
         </nav>
     );
 };

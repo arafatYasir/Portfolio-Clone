@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`bg-[#111a28] antialiased  ${lato.className}`}
+        className={`bg-[#111a28] antialiased ${lato.className}`}
       >
         <Header />
         <main className="max-w-[1200px] mx-auto">
