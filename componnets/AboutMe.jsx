@@ -18,7 +18,7 @@ const AboutMe = () => {
                     </a>
                 </div>
             </div>
-            <div className="w-[525px] h-[326px] group">
+            <div className="sm:w-[525px] h-[326px] group">
                 <Image width={304} height={304} src="https://zonayed.me/static/profile-bd1430b121f195d1f823a8e0b9bf2c46.jpg" alt="Zonayed Ahmed" className="rounded-[10px] w-[304px] h-[304px] mx-auto grayscale group-hover:grayscale-0 group-hover:scale-105 transition duration-900" />
             </div>
 

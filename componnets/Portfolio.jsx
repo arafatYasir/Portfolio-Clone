@@ -59,21 +59,21 @@ const Portfolio = () => {
     }
 
     return (
-        <section className="relative mt-[200px] pl-[100px]">
+        <section className="relative mt-[140px] sm:mt-[200px] sm:pl-[100px]">
             {/* Tabs or Buttons */}
-            <div className="flex gap-[15px]">
+            <div className="flex justify-center sm:justify-start gap-[10px] sm:gap-[15px]">
                 <button
-                    className={`text-white/85 text-lg leading-[26px px-[27.5px] py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedTab === "web" ? "font-black bg-[#00CF5D]" : ""} transition`}
+                    className={`text-white/85 sm:text-lg sm:leading-[26px] px-[25px] py-[5px] sm:px-[27.5px] sm:py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedTab === "web" ? "font-black bg-[#00CF5D]" : ""} transition`}
                     onClick={() => setSelectedTab("web")}
                 >Web</button>
                 <button
-                    className={`text-white/85 text-lg leading-[26px px-[27.5px] py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedTab === "others" ? "font-black bg-[#00CF5D]" : ""} transition`}
+                    className={`text-white/85 sm:text-lg sm:leading-[26px] px-[25px] py-[5px] sm:px-[27.5px] sm:py-[6.5px] border-2 border-[#00CF5D] rounded-[4px] cursor-pointer ${selectedTab === "others" ? "font-black bg-[#00CF5D]" : ""} transition`}
                     onClick={() => setSelectedTab("others")}
                 >Others</button>
             </div>
 
             {/* Portfolios */}
-            <div className="flex gap-[30px] mt-10">
+            <div className="flex flex-col sm:flex-row items-center gap-[30px] mt-[15px] sm:mt-10">
                 {portfolios[selectedTab].map((portfolio, idx) => (
                     <div  key={idx}>
                         {/* Portfolio Image */}
@@ -105,7 +105,7 @@ const Portfolio = () => {
             </div>
 
             {/* Portfolio side text */}
-            <div className="absolute top-[115px] left-[-80px]">
+            <div className="absolute top-[-40px] left-1/2 -translate-1/2 sm:translate-0 sm:top-[115px] sm:left-[-80px]">
                 <PortfolioText />
             </div>
         </section>
