@@ -105,7 +105,7 @@ const Portfolio = () => {
             </div>
 
             {/* Portfolio side text */}
-            <div className="absolute top-[-40px] left-1/2 -translate-1/2 sm:translate-0 sm:top-[115px] sm:left-[-80px]">
+            <div className="absolute top-[-40px] left-1/2 -translate-1/2 sm:translate-0 sm:top-[100px] sm:left-[-80px]">
                 <PortfolioText />
             </div>
         </section>
